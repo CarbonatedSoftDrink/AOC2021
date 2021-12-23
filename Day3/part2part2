@@ -1,0 +1,60 @@
+def binaryConverter(myList):
+    answer = ""
+    i = 0
+    while i < len(myList):
+        if myList[i] == '1':
+            answer += '1'
+        else:
+            answer += '0'
+        i += 1
+    return answer
+
+def survival(givenList):
+    holdingList1 = []
+    status = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    temporary0 = 0
+    temporary1 = 0
+
+    for i in range(12):
+        for item in givenList:
+            if item[i] == '1':
+                temporary1 += 1
+            else:
+                temporary0 += 1
+        
+        if temporary1 >= temporary0:
+            status[i] = 1
+        else:
+            status[i] = 0
+        temporary0 = 0
+        temporary1 = 0
+
+    for item in givenList:
+        if str(item[0]) == str(status[0]):
+            holdingList1.append(item)
+    
+    i = 1
+    while i < 12:
+        for item in holdingList1:
+            if str(item[i]) == str(status[i]):
+                holdingList1.remove(item)
+        i += 1
+
+    print(status)
+    print(holdingList1)
+
+
+        
+
+
+
+def main():
+    with open('Day3/input.txt') as f: 
+        diag = []
+        for line in f:
+            diag.append(line.replace("\n", ""))
+        
+        survival(diag)
+  
+if __name__=="__main__":
+    main()

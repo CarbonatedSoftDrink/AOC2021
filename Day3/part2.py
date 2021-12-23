@@ -232,5 +232,9 @@ while j < len(list1):
         j += 1
 
 print(list1)
+print(one1, one0)
+print(two1, two0)
+print(three1, three0)
+print(four1, four0)
 
     
