@@ -115,8 +115,9 @@ else:
 j = 0
 while j < len(list1):
     if list1[j][1] != str(higher):
-        list1.pop(j)
-    j += 1
+        list1.remove(list1[j])
+    else:
+        j += 1
 
 if three1 >= three0:
     higher = 1
@@ -126,7 +127,8 @@ j = 0
 while j < len(list1):
     if list1[j][2] != str(higher):
         list1.remove(list1[j])
-    j += 1
+    else:
+        j += 1
 
 if four1 >= four0:
     higher = 1
@@ -136,7 +138,8 @@ j = 0
 while j < len(list1):
     if list1[j][3] != str(higher):
         list1.remove(list1[j])
-    j += 1
+    else:
+        j += 1
 
 if five1 >= five0:
     higher = 1
@@ -146,7 +149,8 @@ j = 0
 while j < len(list1):
     if list1[j][4] != str(higher):
         list1.remove(list1[j])
-    j += 1
+    else:
+        j += 1
 
 if six1 >= six0:
     higher = 1
@@ -156,7 +160,8 @@ j = 0
 while j < len(list1):
     if list1[j][5] != str(higher):
         list1.remove(list1[j])
-    j += 1
+    else:
+        j += 1
 
 if seven1 >= seven0:
     higher = 1
@@ -166,7 +171,8 @@ j = 0
 while j < len(list1):
     if list1[j][6] != str(higher):
         list1.remove(list1[j])
-    j += 1
+    else:
+        j += 1
 
 if eight1 >= eight0:
     higher = 1
@@ -176,8 +182,10 @@ j = 0
 while j < len(list1):
     if list1[j][7] != str(higher):
         list1.remove(list1[j])
-    j += 1
-
+    else:
+        j += 1
+print("length:", len(list1))
+print(list1)
 if nine1 >= nine0:
     higher = 1
 else:
@@ -186,8 +194,10 @@ j = 0
 while j < len(list1):
     if list1[j][8] != str(higher):
         list1.remove(list1[j])
-    j += 1
-
+    else:
+        j += 1
+print(ten1, ten0)
+print(eleven1, eleven0)
 if ten1 >= ten0:
     higher = 1
 else:
@@ -196,7 +206,8 @@ j = 0
 while j < len(list1):
     if list1[j][9] != str(higher):
         list1.remove(list1[j])
-    j += 1
+    else:
+        j += 1
 
 if eleven1 >= eleven0:
     higher = 1
@@ -206,7 +217,8 @@ j = 0
 while j < len(list1):
     if list1[j][10] != str(higher):
         list1.remove(list1[j])
-    j += 1
+    else:
+        j += 1
 
 if twelve1 >= twelve0:
     higher = 1
@@ -216,7 +228,8 @@ j = 0
 while j < len(list1):
     if list1[j][11] != str(higher):
         list1.remove(list1[j])
-    j += 1
+    else:
+        j += 1
 
 print(list1)
 
