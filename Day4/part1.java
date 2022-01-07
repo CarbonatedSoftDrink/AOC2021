@@ -15,6 +15,7 @@ public class part1 {
         ArrayList<String> pulledNumbers = new ArrayList<String>();
         ArrayList<String> bingoCards = new ArrayList<String>();
         String[] bingoCard = new String[40];
+        int[] winningIndexes = new int[25];
         int[] row1 = {0, 1, 2, 3, 4};
         int[] row2 = {5, 6, 7, 8, 9};
         int[] row3 = {10, 11, 12, 13, 14};
